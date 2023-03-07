@@ -19,10 +19,27 @@
 * 粒子群算法(Partical Swarm Optimization)
 * 人工鱼群算法(Artificial Fish School Algorithm)
 ### 二、精确算法
-
+#### 2.1 理论
+* 整数规划
+* 非线性规划
+* 凸优化
+#### 2.2 求解器
+* Gurobi
+* Cplex
+* LpSolve
 ### 三、机器学习算法入门
 
 ### 四、编程与计算机基础
-
+#### 4.1 编程语言
+* 一门编译性语言：Java/C++
+* 一门脚本语言：python（numpy/pandas等包；sklearn/tensorflow等框架）
+* SQL
+* Matlab/R（了解）
+#### 4.2 刷题
+##### 数据结构与算法
+* leetcode
+* 剑指offer78道题
+##### 数据库
+* leetcode
 ## 参考资料
 [1] [干货 | 想学习优化算法，不知从何学起？-数据魔法师](https://mp.weixin.qq.com/s?__biz=MzU0NzgyMjgwNg==&mid=2247486981&idx=1&sn=87d4f30de80102bc0bca136f7de85467&chksm=fb49c3bccc3e4aaa6515b502b5bc1cabee1a563af3075aca88be606fd2434a8c7f60505c3e48&mpshare=1&scene=1&srcid=1216qxwwnMH49mj7gIcpjpu3&sharer_sharetime=1580619095116&sharer_shareid=03d01ef948ff5e3726ccd39c29d396f1&key=de4a431374d95f8d159383eda562659e3c283561bab77b3eaa188856ed999b50662effc3b2f3eaef29f7444188586f465ee71832b682136c33e662bb2712862458a0503ed703e0064b0c5dc6d810a07a&ascene=1&uin=NjM1MzY0MjA5&devicetype=Windows+10&version=62070158&lang=zh_CN&exportkey=A3z7u%2BjFT12QsvPFHcq69m4%3D&pass_ticket=RqfTDhUaXBH38PGinYCCdTN%2BA7mEzxL3rgSQ0d8mshNXNG6xeVqj9TS%2FCVWT0exf)
