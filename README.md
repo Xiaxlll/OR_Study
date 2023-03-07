@@ -23,16 +23,25 @@
 * 整数规划
 * 非线性规划
 * 凸优化
+* 对偶理论
+* 多目标规划
+* 最短路问题相关理论与算法
+* KKT条件
+* P和NP理论
+* Robust Optimization
+* 排队论
+* EOQ模型
+* EIQ分析
 #### 2.2 求解器
 * Gurobi
 * Cplex
 * LpSolve
-### 三、机器学习算法入门
+### 三、机器学习与深度学习
 
 ### 四、编程与计算机基础
 #### 4.1 编程语言
 * 一门编译性语言：Java/C++
-* 一门脚本语言：python（numpy/pandas等包；sklearn/tensorflow等框架）
+* 一门脚本语言：python（numpy/pandas等包；pytorch/sklearn/tensorflow等框架）
 * SQL
 * Matlab/R（了解）
 #### 4.2 刷题
