@@ -6,13 +6,16 @@
 ### 一、启发式算法
 #### 1.1 邻域搜索类
 ##### 基础
-* 迭代局部搜索算法
-* 模拟退火
-* 变邻域搜索算法
+* 迭代局部搜索算法(Iterated Local Search)
+* 模拟退火算法(Simulated Annealing)
+* 变邻域搜索算法(Variable Neighborhood Search)
 ##### 进阶
 
 #### 1.2 群体仿生类
-
+* 遗传算法(Genetic Algorithm)
+* 蚁群算法(Ant Colony Optimization)
+* 粒子群算法(Partical Swarm Optimization)
+* 人工鱼群算法(Artificial Fish School Algorithm)
 ### 二、精确算法
 
 ### 三、机器学习算法入门
