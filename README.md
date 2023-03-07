@@ -10,7 +10,9 @@
 * 模拟退火算法(Simulated Annealing)
 * 变邻域搜索算法(Variable Neighborhood Search)
 ##### 进阶
-
+* 禁忌搜索(Tabu Search)
+* 自适应大邻域搜索(Adaptive Large Neighborhood Search)
+* 贪婪随机自适应搜索(Greedy Randomized Adaptive Search)
 #### 1.2 群体仿生类
 * 遗传算法(Genetic Algorithm)
 * 蚁群算法(Ant Colony Optimization)
