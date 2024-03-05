@@ -125,9 +125,14 @@
     double price = 2.99; // 默认是double类型
     ```
   * 字符类型
-    
+    ``` java
+    char grade = 'A';
+    char ch2 = '1';
+    ```
   * 布尔类型
-  * 
+    ``` java
+    boolean flag = true;
+    ```
 - 访问修饰符
   
   
