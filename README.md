@@ -18,7 +18,7 @@
 * 蚁群算法(Ant Colony Optimization)
 * 粒子群算法(Partical Swarm Optimization)
 * 人工鱼群算法(Artificial Fish School Algorithm)
-### 二、精确算法
+### 二、精确算法(这里是看书学习的)
 #### 2.1 理论
 * 整数规划
 * 非线性规划
