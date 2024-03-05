@@ -4,7 +4,7 @@
 * 基本数据类型
 * 面向对象
 * 类的定义、属性和方法
-* new关键字
+* `new`关键字
 * private和public
 * static
 * import关键字
