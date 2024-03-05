@@ -42,7 +42,7 @@
 #### 4.1 编程语言
 * 一门编译性语言：Java/C++
 * 一门脚本语言：python（numpy/pandas等包；pytorch/sklearn/tensorflow等框架）
-* SQL
+* 数据库：SQL
 * Matlab/R（了解）
 #### 4.2 刷题
 ##### 数据结构与算法
