@@ -40,7 +40,7 @@
 
 ### 四、编程与计算机基础
 #### 4.1 编程语言
-* 一门编译性语言：Java/C++
+* 一门编译性语言：[Java](https://kamacoder.com/course.php?course_id=2)/C++
 * 一门脚本语言：python（numpy/pandas等包；pytorch/sklearn/tensorflow等框架）
 * 数据库：SQL
 * Matlab/R（了解）
