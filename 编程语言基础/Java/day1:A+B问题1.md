@@ -44,8 +44,10 @@
 - c程序的基本结构
   **文件名和主类名相对应**:假如文件名是`Main.java`，程序内要包含以下结构
   ``` java
+  // 使用class关键字定义一个public(公开)类，类的名称是Main
   public class Main {
-  
+    public static void main(String[] args){
+    }
   }
   ```
   
