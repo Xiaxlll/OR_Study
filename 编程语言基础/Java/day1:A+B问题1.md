@@ -66,6 +66,16 @@
   * 标准输入：`System.in`；是一个标准的输入流，它允许你从控制台（键盘）获取用户输入的数据。
   * `Scanner` 是 Java 中的一个类，它位于 `java.util` 包中，它提供了一种简便的方式来处理输入数据。
   * 标准输出：System.out
+  ``` java
+  import java.util.Scanner;
+  public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        sc.close(); // 关闭Scanner对象
+    }
+  }
+  ```
 - 变量
 - 程序编写
 - 延伸
