@@ -84,6 +84,24 @@
   int a = 1; // 定义一个整数类型变量，并赋予初始值1
   ```
 - 程序编写
+  `Scanner`使用`nextInt()`方法读取并返回下一个整数
+  ``` java
+  int a = sc.nextInt(); // 读取下一个整数，并将之赋值给变量a
+  int b = sc.nextInt(); // 读取下一个整数，并将之赋值给变量b
+  ```
+  ``` java
+  import java.util.Scanner;
+
+  public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+          int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println(a+b);
+        sc.close(); 
+    }
+  }
+  ```
 - 延伸
 - 访问修饰符
   
