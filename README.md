@@ -46,7 +46,7 @@
 * Matlab/R（了解）
 #### 4.2 刷题
 ##### 数据结构与算法
-* [leetcode](../刷题/代码随想录)
+* [leetcode](OR_Study/刷题/代码随想录)
 * 剑指offer78道题
 ##### 数据库
 * leetcode
