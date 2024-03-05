@@ -34,4 +34,8 @@
     }
   }
   ```
+  **创造一个类的实例**:
+  ``` java
+  Person xiaoming = new Person();
+  ```
 - c程序的基本结构
