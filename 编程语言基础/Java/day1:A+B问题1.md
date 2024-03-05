@@ -36,6 +36,17 @@
   ```
   **创造一个类的实例**:
   ``` java
+  // new Person()创建一个实例
+  // 将这个实例起名为xiaoming
+  // Person xiaoming表示这是一个Person的实例，xiaoming属于Person这种类型
   Person xiaoming = new Person();
   ```
 - c程序的基本结构
+  **文件名和主类名相对应**:假如文件名是`Main.java`，程序内要包含以下结构
+  ``` java
+  public class Main {
+  
+  }
+  ```
+  
+  
