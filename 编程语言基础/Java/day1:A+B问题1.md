@@ -68,11 +68,11 @@
   * `Scanner`类中的一些方法:
     - next()：读取下一个字符串。
     - nextInt()：读取下一个整数。
-    nextDouble()：读取下一个双精度浮点数。
-    nextLine()：读取下一行文本。
-    hasNext()：判断是否还有下一个输入项。如果有，返回 true；否则返回 false。
-    hasNextInt()：判断是否还有下一个整数输入项。
-    hasNextDouble()：检查是否还有下一个双精度浮点数输入项。
+    - nextDouble()：读取下一个双精度浮点数。
+    - nextLine()：读取下一行文本。
+    - hasNext()：判断是否还有下一个输入项。如果有，返回 true；否则返回 false。
+    - hasNextInt()：判断是否还有下一个整数输入项。
+    - hasNextDouble()：检查是否还有下一个双精度浮点数输入项。
   * 标准输出：System.out
   ``` java
   import java.util.Scanner;
