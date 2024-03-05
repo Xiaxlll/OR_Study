@@ -136,6 +136,22 @@
 - 访问修饰符
   * `public`: 可以用来修饰类、属性或者方法，表示被修饰的成员对于其他所有类都是可见的。
   * `private`: 表示被修饰的成员只能在包含它的类中被访问, 其他类无法访问类中的 private 成员。
-  
+## 练习
+第一次没有运行出来😮‍💨，因为不记得函数Sc.hasNextInt()了，一定要记得不要打错了函数名！
+``` java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextInt()){
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            System.out.println(a+b);
+        }
+        sc.close();
+    }
+}
+```
   
   
