@@ -65,6 +65,14 @@
 - 输入输出
   * 标准输入：`System.in`；是一个标准的输入流，它允许你从控制台（键盘）获取用户输入的数据。
   * `Scanner` 是 Java 中的一个类，它位于 `java.util` 包中，它提供了一种简便的方式来处理输入数据。
+  * `Scanner`类中的一些方法:
+    - next()：读取下一个字符串。
+    - nextInt()：读取下一个整数。
+    nextDouble()：读取下一个双精度浮点数。
+    nextLine()：读取下一行文本。
+    hasNext()：判断是否还有下一个输入项。如果有，返回 true；否则返回 false。
+    hasNextInt()：判断是否还有下一个整数输入项。
+    hasNextDouble()：检查是否还有下一个双精度浮点数输入项。
   * 标准输出：System.out
   ``` java
   import java.util.Scanner;
@@ -119,6 +127,7 @@
   * 字符类型
     
   * 布尔类型
+  * 
 - 访问修饰符
   
   
