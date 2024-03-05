@@ -5,12 +5,12 @@
 * 面向对象
 * 类的定义、属性和方法
 * `new`关键字
-* private和public
-* static
-* import关键字
-* 输入：Scanner类的使用
+* `private`和`public`
+* `static`
+* `import`关键字
+* 输入：`Scanner`类的使用
 * 输出语句
-* while控制多次输入
+* `while`控制多次输入
 ## 笔记
 - 类和面向对象
   
