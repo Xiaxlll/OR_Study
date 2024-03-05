@@ -112,6 +112,13 @@
     long gdp = 10000000000L;
     ```
   * 浮点类型
+    ``` java
+    float floatValue = 3.14159f; // 使用 'f' 后缀表示 float
+    double price = 2.99; // 默认是double类型
+    ```
+  * 字符类型
+    
+  * 布尔类型
 - 访问修饰符
   
   
