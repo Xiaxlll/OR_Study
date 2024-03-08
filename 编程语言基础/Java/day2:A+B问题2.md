@@ -30,6 +30,25 @@ public class Main{
 }
 ```
 正确答案：
+``` java
+import java.util.Scanner;
 
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextInt()){
+            int N = sc.nextInt();
+            int i = 1;
+            while(i <= N){
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+                System.out.println(a+b);
+                i++;
+            }  
+        }
+        sc.close();
+    }
+}
+```
 <img width="653" alt="image" src="https://github.com/Xiaxlll/OR_Study/assets/77572858/ec032e34-04f0-4057-b365-13ee096212b1">
 
