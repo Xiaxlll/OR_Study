@@ -74,6 +74,14 @@ for (Integer num : nums) {
 ```
 
 ## 增强型for循环
+``` java
+for (elementType element : collection) {
+    // 在此处处理 element
+}
+```
+- elementType 是元素的数据类型
+- element 是在每次迭代中表示一个元素的变量
+- collection 是要迭代的数组或其他的对象（比如后面讲到的集合）
 
 ## 练习
 
