@@ -84,6 +84,39 @@ for (elementType element : collection) {
 - collection 是要迭代的数组或其他的对象（比如后面讲到的集合）
 
 ## 练习
+### 使用数组
+约等于一遍过，只不过第一次把`String`输成了`Strings`
+``` java
+//import java.util.Arraylist;
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] nums = new int[n];
+        for(int i = 0;i < n;i++){
+            nums[i] = sc.nextInt();
+        }
+        // 倒序
+        for(int i = 0;i < n;i++){
+            System.out.println(nums[n-i-1]);
+        }
+        
+        // 正序
+        for(int i = 0;i < n;i++){
+            if(i%2 == 0){
+                System.out.println(nums[i]);
+            }
+            
+        }
+        sc.close();
+    }
+}
+```
+### 使用Arraylist
+
+
 
 
 
