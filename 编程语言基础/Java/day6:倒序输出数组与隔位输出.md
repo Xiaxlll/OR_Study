@@ -73,7 +73,7 @@ for (Integer num : nums) {
 }
 ```
 
-## 增强型for循环
+## 增强型for循环(适用于ArrayList)
 ``` java
 for (elementType element : collection) {
     // 在此处处理 element
