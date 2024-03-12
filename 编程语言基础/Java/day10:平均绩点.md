@@ -75,3 +75,99 @@ switch (expression) {
 }
 ```
 * 注意：`case` 中不能使用变量，而不是一个确定的值
+
+## 练习
+注意：
+- `String`的开头是大写
+- 分割字符串的方法(拼写)
+- 字符串应该使用equals进行比较
+- 调用`s.length`不需要括号
+- printf的使用
+
+### 错误答案
+``` java
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextLine()){
+            String score = sc.nextLine();
+            String[] s = score.splite(" ");
+            double sum = 0.00;
+            int flag = 0;
+            for(int i = 0;i < s.length();i++){
+                switch(s[i]){
+                    case "A":
+                        sum += 4.00;
+                       break;
+                    case "B":
+                        sum += 3.00;
+                        break;
+                    case "C":
+                        sum += 2.00;
+                       break;
+                    case "D":
+                        sum += 1.00;
+                        break;
+                    case "F":
+                        sum += 0.00;
+                        break;
+                    default:
+                        flag = 1;
+                }
+            }
+            if(flag == 0){
+                System.out.println(sum/s.length());
+            }else{
+                System.out.println("Unknown");
+            }
+        }
+        sc.close();
+    }
+}
+```
+
+### 正确答案
+``` java
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextLine()){
+            String score = sc.nextLine();
+            String[] s = score.split(" ");
+            double sum = 0.00;
+            int flag = 0;
+            for(int i = 0;i < s.length;i++){
+                switch(s[i]){
+                    case "A":
+                        sum += 4.00;
+                       break;
+                    case "B":
+                        sum += 3.00;
+                        break;
+                    case "C":
+                        sum += 2.00;
+                       break;
+                    case "D":
+                        sum += 1.00;
+                        break;
+                    case "F":
+                        sum += 0.00;
+                        break;
+                    default:
+                        flag = 1;
+                }
+            }
+            if(flag == 0){
+                System.out.printf("%.2f\n",sum/s.length);
+            }else{
+                System.out.println("Unknown");
+            }
+        }
+        sc.close();
+    }
+}
+```
