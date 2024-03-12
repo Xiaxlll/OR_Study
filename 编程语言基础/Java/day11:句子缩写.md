@@ -40,5 +40,77 @@ StringBuilder 也用于处理字符串，但为什么要使用StringBuilder而�
  ``` java
  char[] arr = line.toCharArray(); // 将字符串转为字符数组，方便遍历
  ```
+- 注意如何跳过首字母和空格的
+### 错误答案
+错误原因：没有使用.toCharArray();等函数，导致由string组成的数组中有很多空格
+``` java
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.nextLine();
+        while(n-- > 0){
+            String s = sc.nextLine().trim();
+            String[] word = s.split(" ");
+            System.out.print(word[3]);
+            /*
+            for(int i = 0;i < word.length;i++){
+                System.out.print(word[i].charAt(0););
+            }
+            //System.out.print(word[1].charAt(0));
+            
+            /*
+            for(int i = 0;i < word.length;i++){
+                char a = word[i].charAt(0);
+                System.out.print(a);
+            }
+                
+                /*
+                if(a < 129){
+                    System.out.print(Character.toUpperCase());
+                }else{
+                    System.out.print(a);
+                }
+                System.out.println();
+                */
+            }
+            
+        }
+    }
+```
+## 我的答案
+``` java
+import java.util.Scanner;
 
-- char[] arr = line.toCharArray(); // 将字符串转为字符数组，方便遍历
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.nextLine();
+        while(n-- > 0){
+            String s = sc.nextLine().trim();
+            char[] a = s.toCharArray();
+            int i = 0;
+            while(i < a.length){
+                if(a[i] < 129){
+                    System.out.print(Character.toUpperCase(a[i]));
+                }else{
+                    System.out.print(a[i]);
+                }
+                while(i < a.length && a[i]!=' '){
+                    i++;
+                }
+                while(i < a.length && a[i]==' '){
+                    i++;
+                }
+                
+            }
+            
+            
+            System.out.println();
+        }
+            
+        }
+    }
+```
+
