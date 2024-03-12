@@ -58,6 +58,7 @@
      ``` java
      String inputLine = scanner.nextLine();
      ```
+   - 是否有下一行`hasNextLine()`
      
 ## 扩展：`Switch-Case`
 ``` java
