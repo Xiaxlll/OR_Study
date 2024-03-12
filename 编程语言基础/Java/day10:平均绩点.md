@@ -52,8 +52,8 @@
      ``` java
      String[] parts = s3.split(" ") // 会将字符串根据空格拆分为多个部分
      ```
-   - 字符串格式化
-   - 字符串查找和替换
+   - 字符串格式化`String.format()` 方法或 `printf()`
+   - 字符串查找和替换 `indexOf()` 方法 or `replace()` 方法
 ## 扩展：`Switch-Case`
 ``` java
 switch (expression) {
