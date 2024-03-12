@@ -17,7 +17,15 @@
 
 ## `String`的使用
 1. 声明和初始化
-2. 操作
+   - 创建字符串变量
+     ``` java
+     String name = "Hello, Java";
+     ```
+   - 创建字符串对象
+     ``` java
+     String message = new String("Hello");
+     ```
+3. 操作
 
 ## 扩展：`Switch-Case`
 ``` java
