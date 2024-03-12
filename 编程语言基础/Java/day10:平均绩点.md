@@ -80,6 +80,9 @@ switch (expression) {
 注意：
 - `String`的开头是大写
 - 分割字符串的方法(拼写)
+  ``` java
+  String[] s = score.split(" ");
+  ```
 - 字符串应该使用equals进行比较
 - 调用`s.length`不需要括号
 - printf的使用
