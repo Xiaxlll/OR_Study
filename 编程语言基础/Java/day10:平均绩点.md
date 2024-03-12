@@ -54,6 +54,11 @@
      ```
    - 字符串格式化`String.format()` 方法或 `printf()`
    - 字符串查找和替换 `indexOf()` 方法 or `replace()` 方法
+   - 读取下一行字符串`nextLine()`
+     ``` java
+     String inputLine = scanner.nextLine();
+     ```
+     
 ## 扩展：`Switch-Case`
 ``` java
 switch (expression) {
