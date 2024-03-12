@@ -26,7 +26,34 @@
      String message = new String("Hello");
      ```
 3. 操作
-
+   - 字符串拼接`+`
+     注意：在Java中，`String`类的对象是不可变的，所以每次字符串拼接都会创建一个新的字符串对象
+     ``` java
+     string s1 = "hello";
+     string s2 = "world";
+     string s3 = s1 + " " + s2; // 对字符串进行连接，拼接之后的字符串是"hello world", 中间加了空格
+     ```
+   - 字符串长度`length()`
+     ``` java
+     int len = s1.length(); // 字符串的长度即字符串中字符的个数，"hello"的长度为5
+     ```
+   - 字符串比较`equals()`
+     ``` java
+     if(sex.equals("男")){
+     }
+     ```
+   - 字符串索引`charAt()`
+     字符串中的字符可以通过索引访问，索引从 0 开始。
+     ``` java
+     char c1 = s1.charAt(0);
+     ```
+   - 字符串切割和拆分
+     可以使用 split() 方法将一个字符串根据指定的分隔符拆分成字符串数组。
+     ``` java
+     String[] parts = s3.split(" ") // 会将字符串根据空格拆分为多个部分
+     ```
+   - 字符串格式化
+   - 字符串查找和替换
 ## 扩展：`Switch-Case`
 ``` java
 switch (expression) {
