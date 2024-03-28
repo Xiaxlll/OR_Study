@@ -48,3 +48,35 @@
 接口是一种抽象数据类型，定义了一组抽象方法，但是**方法通常不包含方法体，而只有方法的声明**，主要是用来定义某种行为的规范，而实现类是**具体的类**，它实现了一个或多个接口定义的抽象方法，并且提供了这些方法的具体实现。
 
 ## 练习
+
+* 注意：Set<Integer> set = new HashSet<>();<>里面是类
+* 正确答案
+  ``` java
+  import java.util.Set;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextInt()){
+            int k = sc.nextInt();
+            while(k-- > 0){
+                int m = sc.nextInt();
+                Set<Integer> set = new HashSet<>();
+                
+                while(m-- > 0 ){
+                    set.add(sc.nextInt());
+                }
+                int n = sc.nextInt();
+                if(set.contains(n)){
+                    System.out.println("YES");
+                }else{
+                    System.out.println("NO");
+                }
+            }
+        }
+        sc.close();
+    }
+}
+  ```
