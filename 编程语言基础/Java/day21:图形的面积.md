@@ -235,6 +235,79 @@ System.out.println("长方形的面积：" + rectangleArea);
 ## 练习
 * 注意.判断字符串是否相等要用`.equals()`
 
+``` java
+import java.util.*;
+
+abstract class Shape{
+    protected String type;
+    public abstract double Calculate();
+    public String getType(){
+        return type;
+    }
+}
+
+class Rectangle extends Shape{
+    private int width;
+    private int height;
+
+    // 构造方法
+    public Rectangle(int width, int height){
+        this.type = "Rectangle";
+        this.width = width;
+        this.height = height;
+    }
+    @Override
+    public double Calculate(){
+        return width*height;
+    }
+
+}
+
+class Circle extends Shape{
+    private int radius;
+
+    public Circle(int radius){
+        this.type = "Circle";
+        this.radius = radius;
+    }
+
+    @Override
+    public double Calculate(){
+        return 3.14 * radius * radius;
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        ArrayList<Shape> shapes = new ArrayList<>();
+
+        while(true){
+            String inputLine = sc.nextLine();
+            String[] data = inputLine.split(" ");
+            String ShapeType = data[0];
+
+            if(ShapeType.equals("end")){
+                break;
+            }else if(ShapeType.equals("rectangle")){
+                int width = Integer.parseInt(data[1]);
+                int height = Integer.parseInt(data[2]);
+                shapes.add(new Rectangle(width, height));
+            }else if(ShapeType.equals("circle")){
+                int radius = Integer.parseInt(data[1]);
+                shapes.add(new Circle(radius));
+            }
+        }
+
+        for(Shape shape : shapes){
+            System.out.printf("%s aresa: %.2f\n",shape.getType(), shape.Calculate());
+        }
+
+    }
+}
+```
+
 
 
 
