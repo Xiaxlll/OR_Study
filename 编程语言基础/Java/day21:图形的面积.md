@@ -233,6 +233,8 @@ System.out.println("长方形的面积：" + rectangleArea);
 ```
 
 ## 练习
+* 注意.判断字符串是否相等要用`.equals()`
+
 
 
 
