@@ -36,5 +36,16 @@
    * poll()： 出队操作，获取并移除队列的头部元素。
    * peek(): 访问队列的头部元素，但不会将其移除。
    * size(): 获取队列的长度，即队列中元素的数量。
-4. 
-5. 
+
+   ``` java
+   queue.add("Jack"); 
+   queue.add("Mike"); // 入队了两个名称字符串
+
+   String name = queue.poll(); // 移除队列头部的元素
+
+   String name = queue.peek(); // 获取队列头部的元素但是不会将其移除,如果队列为空，返回null
+
+   boolean isEmpty = queue.isEmpty(); //  如果队列为空，返回true；否则返回false
+
+   int queueSize = queue.size(); // 获取队列中元素的数量
+   ```
