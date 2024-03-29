@@ -49,3 +49,43 @@
 
    int queueSize = queue.size(); // 获取队列中元素的数量
    ```
+## 练习
+  * 注意：队列的建立，类型是Deque不是Queue
+  ``` java
+  import java.util.Scanner;
+import java.util.Deque;
+import java.util.ArrayDeque;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextInt()){
+            int n = sc.nextInt();
+            
+            Deque<String> queque = new ArrayDeque<>();
+            
+            while(n-- > 0){
+                queque.add(sc.next());
+            }
+            
+            int m = sc.nextInt();
+            while(m-- > 0){
+                int act = sc.nextInt();
+                if(act==1){
+                    if(!queque.isEmpty()){
+                        queque.poll();
+                    }
+                }else if(act==2){
+                    queque.add(sc.next());
+                }
+            }
+            if(queque.isEmpty()){
+                System.out.println("There are no more people in the queue.");
+            }else{
+                System.out.println(queque.peek());
+            }
+        }
+        sc.close();
+    }
+}
+  ```
