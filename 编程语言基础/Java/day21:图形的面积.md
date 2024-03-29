@@ -233,7 +233,13 @@ System.out.println("长方形的面积：" + rectangleArea);
 ```
 
 ## 练习
-* 注意.判断字符串是否相等要用`.equals()`
+注意：
+* 判断字符串是否相等要用`.equals()`
+* 定义抽象方法：
+  ``` java
+  public abstract double Calculate();
+  ```
+
 
 ``` java
 import java.util.*;
