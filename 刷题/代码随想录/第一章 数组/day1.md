@@ -52,3 +52,21 @@
     }
   }
   ```
+## 27 移除元素
+* 知识点：双指针法
+* 答案（一遍过！）
+  ``` java
+  class Solution {
+    public int removeElement(int[] nums, int val) {
+        int flag = 0;
+        for(int i = 0;i < nums.length;i++){
+            if(nums[i]==val){
+                flag++;
+                continue;
+            }
+            nums[i-flag] = nums[i];
+        }
+        return nums.length-flag;
+    }
+  }
+  ```
