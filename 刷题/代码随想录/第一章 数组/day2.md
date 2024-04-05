@@ -33,5 +33,64 @@
   - 在判断大小的时候可以使用库函数`Math.min`或者`Math.max`
 * 思路：
   - `j`不断增加，在`j`增加的每一个循环中，若`sum>=target`,`i`不断增加，直到`sum<target`
+* 正确答案：
+  ``` java
+  class Solution {
+    public int minSubArrayLen(int target, int[] nums) {
+        int i = 0;
+        int sum = 0;
+        int result = Integer.MAX_VALUE;
+        for(int j = 0;j < nums.length;j++){
+            sum += nums[j];
+            while(sum >= target){
+                result = Math.min(j-i+1, result);
+                sum -= nums[i++];
+            }
+        }
+        return result == Integer.MAX_VALUE ? 0 : result;
+    }
+  }
+  ```
 
 ## 59 螺旋矩阵（2）
+* 注意：
+  - 判断循环次数
+  - 开始位置
+  - 填充数字
+
+* 正确答案
+  ``` java
+  class Solution {
+    public int[][] generateMatrix(int n) {
+        int[][] matrix = new int[n][n];
+        int loop = 0;
+        int start = 0;
+        int count = 1;
+        int i = 0;
+        int j = 0;
+        while(loop++ < n/2){
+            // 从左往右
+            for(j = start;j<n-loop;j++){
+                matrix[start][j] = count++;
+            }
+            // 从上往下
+            for(i = start;i< n-loop;i++){
+                matrix[i][n-loop] = count++;
+            }
+            // 从右往左
+            for(j = n-loop;j>= loop;j--){
+                matrix[i][j] = count++;
+            }
+            // 从下往上
+            for(i = n-loop;i>= loop;i--){
+                matrix[i][j] = count++;
+            }
+            start++;
+        }
+        if(n%2==1){
+            matrix[start][start] = count;
+        }
+        return matrix;
+    }
+  }
+  ```
