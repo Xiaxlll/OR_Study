@@ -77,8 +77,8 @@ class Solution {
     public Node(int val){
         this.val = val;
     }
-}
-class MyLinkedList {
+  }
+  class MyLinkedList {
     int size;
     Node head;
 
