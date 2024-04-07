@@ -181,6 +181,9 @@ class Solution {
     }
   ```
 * 递归法
+  - 图解
+    <img width="462" alt="image" src="https://github.com/Xiaxlll/OR_Study/assets/77572858/c13308e3-3301-494a-afe6-7051663c57fc">
+
   ``` java
   class Solution {
     public ListNode reverseList(ListNode head) {
