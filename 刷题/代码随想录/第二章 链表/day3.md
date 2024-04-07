@@ -144,3 +144,37 @@ class Solution {
   }
   ```
 ## 206.反转链表
+* 注意：
+  - 链表不要出现环
+ 
+* 我的答案：
+  ``` java
+   /**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+  class Solution {
+    public ListNode reverseList(ListNode head) {
+        if(head == null || head.next == null){
+            return head;
+        }
+        ListNode p = head.next;
+        head.next = null;
+        while(p.next!=null){
+            ListNode q = p.next;
+            p.next = head;
+            head = p;
+            p = q;  
+        }
+        p.next = head;
+        head = p;
+        return head;
+    }
+  }
+  ```
