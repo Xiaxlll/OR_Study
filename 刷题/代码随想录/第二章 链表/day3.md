@@ -146,8 +146,10 @@ class Solution {
 ## 206.反转链表
 * 注意：
   - 链表不要出现环
+  - 两种方法：（1）双指针（2）递归
  
 * 我的答案：
+  - 思路：不断使用头查法
   ``` java
    /**
    * Definition for singly-linked list.
