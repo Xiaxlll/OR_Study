@@ -96,3 +96,28 @@ class Solution {
 ```
 
 ## 1. 两数之和
+* 注意：
+  - 这道题的思路有点难想
+  - 注意什么时候使用`HashSet`，什么时候使用`map`
+  - 注意map的方法名map.containsKey（）
+  - 注意数组中元素相同的情况
+* 正确答案：
+``` java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer,Integer> map = new HashMap<>();
+        int[] asw = new int[2];
+        for(int i = 0;i<nums.length;i++){
+            
+            if(map.containsKey(target-nums[i])){
+                asw[0] = i;
+                asw[1] = map.get(target-nums[i]);
+                
+            }
+            map.put(nums[i],i);
+        }
+        return asw;
+
+    }
+}
+```
