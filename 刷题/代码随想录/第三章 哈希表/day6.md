@@ -67,5 +67,32 @@ class Solution {
 ```
 
 ## 202. 快乐数
+* 注意：
+  - 由于不确定元素的个数，可以使用`HashSet`;
+* 正确答案：
+``` java
+class Solution {
+    public boolean isHappy(int n) {
+        Set<Integer> set = new HashSet<>();
+        int num = n;
+        while(true){
+            int sum = 0;
+            while(num!=0){
+                sum+=(num%10*(num%10));
+                num = num/10;
+            }
+            if(sum==1){
+                return true;
+            }
+            if(set.contains(sum)){
+                return false;
+            }else{
+                set.add(sum);
+            }
+            num = sum;
+        }
+    }
+}
+```
 
 ## 1. 两数之和
