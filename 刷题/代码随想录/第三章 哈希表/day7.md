@@ -91,4 +91,56 @@ class Solution {
 ```
 
 ## 18. 四数之和
+* 注意：
+  - 注意是否需要去重
+  - 注意去重的意义（如果重复的话将返回两个一样的解）
+  - 注意判断条件j>i+1
+  - 注意当nums中出现负数的时候不需要剪枝
+* 错误答案
+``` java
+class Solution {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+        Arrays.sort(nums);
+        for(int i = 0;i<nums.length;i++){
+            if(nums[i]>target){
+                return result;
+            }
+            if(i>0 && nums[i] == nums[i-1]){
+                continue;
+            }
+            for(int j = i+1;j<nums.length;j++){
+                if(j>0 && nums[j]==nums[j-1]){
+                    continue;
+                }
+                int left = j + 1;
+                int right = nums.length - 1;
+                while(left<right){
+                    int sum = nums[i] + nums[j] + nums[left] + nums[right];
+                    if(sum < target){
+                        left++;
+                    }else if(sum > target){
+                        right--;
+                    }else{
+                        result.add(Arrays.asList(nums[i],nums[j],nums[left],nums[right]));
+                        while(left<right && nums[left] == nums[left+1]){
+                        left++;
+                    }
+                        while(left<right && nums[right] == nums[right-1]){
+                        right--;
+                    }
+                        left++;
+                        right--;
+                    }
+                    
+                    
+                }
+            }
+        }
+        return result;
+    }
+}
+```
+* 正确答案
+  
 
